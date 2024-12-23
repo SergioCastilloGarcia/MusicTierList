@@ -44,7 +44,21 @@ window.onSpotifyWebPlaybackSDKReady = () => {
     player.addListener('not_ready', ({ device_id }) => {
         console.log('El dispositivo no está listo:', device_id);
     });
+    player.addListener('initialization_error', ({ message }) => {
+        console.error('Error de inicialización:', message);
+    });
 
+    player.addListener('authentication_error', ({ message }) => {
+        console.error('Error de autenticación:', message);
+    });
+
+    player.addListener('account_error', ({ message }) => {
+        console.error('Error de cuenta:', message);
+    });
+
+    player.addListener('playback_error', ({ message }) => {
+        console.error('Error de reproducción:', message);
+    });
     player.connect();
 };
 
