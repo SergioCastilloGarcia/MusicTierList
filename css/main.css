@@ -1,0 +1,36 @@
+.tier-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tier-label {
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tier-container {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 130px;
+    background-color: #f8f9fa;
+}
+
+.song-card {
+    width: 100px;
+    text-align: center;
+    cursor: grab;
+}
+
+.song-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+p {
+    margin: 0;
+}
